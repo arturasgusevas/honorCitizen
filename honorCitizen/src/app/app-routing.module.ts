@@ -4,10 +4,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { NewPostComponent } from './new-post/new-post.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
 
 const routes: Routes = [
-  {path: '', pathMatch: 'full', redirectTo: 'home'},
-  {path: 'home', component: HomeComponent},
+  {path: '', component: HomeComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'register', component: RegisterComponent},
   {path: 'contacts', component: ContactsComponent},
   {path: 'posts', component: NewPostComponent}
 ];
@@ -18,4 +21,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-export const routingComponents = [HomeComponent, ContactsComponent, NewPostComponent]
+export const routingComponents = [HomeComponent, ContactsComponent, NewPostComponent, LoginComponent, RegisterComponent]

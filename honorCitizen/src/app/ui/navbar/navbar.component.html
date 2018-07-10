@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+ <a class="navbar-brand" href="#">Ozys</a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+ </button>
+ <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+   <div class="navbar-nav">
+     <a class="nav-item nav-link active" routerLink='/'>Pagrindinis<span class="sr-only">(current)</span></a>
+     <a class="nav-item nav-link" routerLink='/posts'>Postai</a>
+     <a class="nav-item nav-link" routerLink='/contacts'>Kontaktai</a>
+   </div>
+   <mat-icon [routerLink]="['sign-in']" class="a-icon" *ngIf="!(auth.user | async)">perm_identity</mat-icon>
+ </div>
+</nav>
