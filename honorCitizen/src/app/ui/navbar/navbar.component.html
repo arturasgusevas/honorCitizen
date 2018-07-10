@@ -9,6 +9,7 @@
      <a class="nav-item nav-link" routerLink='/posts'>Postai</a>
      <a class="nav-item nav-link" routerLink='/contacts'>Kontaktai</a>
    </div>
-   <mat-icon [routerLink]="['sign-in']" class="a-icon" *ngIf="!(auth.user | async)">perm_identity</mat-icon>
  </div>
+ <button class="btn btn-default" [routerLink]="['login']">Prisijungti</button>
+ <button class="btn btn-default" [routerLink]="['register']">Registruotis</button>
 </nav>
