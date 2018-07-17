@@ -1,0 +1,25 @@
+.white-box{
+  background-color: white;
+  filter: drop-shadow(0, 0, 2, 10, (rgba));
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+  button{
+    text-align: center;
+  }
+}
+
+.display-4{
+  position: relative;
+  z-index: 10;
+}
+
+.jumbotron{
+  background-image: url('assets/unsplash.jpg') fixed center no-repeat;
+  background-size: cover;
+}

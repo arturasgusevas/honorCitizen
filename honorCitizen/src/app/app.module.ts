@@ -15,6 +15,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { FeedComponent } from './feed/feed.component';
+import { SearchComponent } from './search/search.component';
+import { ProfileComponent } from './profile/profile.component';
+import { UploadComponent } from './new-post/upload/upload.component';
 
 
 @NgModule({
@@ -23,7 +27,11 @@ import { RegisterComponent } from './auth/register/register.component';
     routingComponents,
     NavbarComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    FeedComponent,
+    SearchComponent,
+    ProfileComponent,
+    UploadComponent
   ],
   imports: [
     BrowserModule,

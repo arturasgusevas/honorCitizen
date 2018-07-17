@@ -1,7 +1,25 @@
-button{
-  border: 0;
-  margin-left: 10px;
-  border-radius: 2px;
-  background-color: none;
+.btn{
+  width: 150px;
+  margin-right: 30px;
   cursor: pointer;
+}
+
+.search-bar{
+  width: 300px;
+}
+
+.navbar{
+  height: 100px;
+  .navbar-brand{
+    color: silver;
+    font-size: 40px;
+    font-weight: 600;
+    margin-right: 50px;
+  }
+}
+
+.navbar-nav{
+  font-size: 20px;
+  color: white;
+  align-self: flex-end;
 }
