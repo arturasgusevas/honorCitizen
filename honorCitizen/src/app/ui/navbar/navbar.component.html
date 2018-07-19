@@ -4,14 +4,10 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <form class="form-inline my-2 my-lg-0">
-        <button class="btn btn-danger my-2 my-sm-0" type="submit" [routerLink]="['new-post']">Ikelk</button>
-        <input class="form-control mr-sm-2 search-bar" type="search" placeholder="Search">
-        <span class="search-glass"> <img src="assets/search.svg" alt="">
-        </span>
-      </form>
+        <button class="btn btn-danger" type="submit" [routerLink]="['new-post']">Ikelk</button>
+        <input class="form-control search-bar" type="search" placeholder="Search">
+        <img class="looking-glass" src="./../../assets/search.svg">    
       <div class="navbar-nav">
         <a class="nav-item nav-link" routerLink='/feed'>Ivykiai</a>
         <a class="nav-item nav-link" routerLink='/login'>Prisijunk</a>
